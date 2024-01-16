@@ -1,0 +1,24 @@
+{
+    "meta" : {
+        "label": "ThreatFox IOCs",
+        "description": "ThreatFox IOCs full data dump",
+        "icon": "icon-file-text"
+    },
+
+    "readable": true,
+    "writable": false,
+
+    "params": [
+        {
+          "name": "ioc_type",
+          "label": "IOC type",
+          "type": "SELECT",
+          "selectChoices" : [
+              { "value": "urls", "label": "URLs"},
+              { "value": "domains", "label": "Domains"},
+              { "value": "ip-port", "label": "IP-port"}
+          ],
+          "mandatory": true
+      }
+    ]
+}
